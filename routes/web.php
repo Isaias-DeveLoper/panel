@@ -24,4 +24,13 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes(['verify' => true]);
 
+//Projeto 
+Route::get('project',function(){
+    return view('_projects.index');
+
+})->name('project');
+Route::get('newProject','ProController@CreateProject')->name('newProject');
+
 Route::get('/home', 'HomeController@index')->middleware('verified');
+
+Route::resource('projects', 'projectController');
