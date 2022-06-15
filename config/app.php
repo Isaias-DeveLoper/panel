@@ -161,6 +161,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        RealRashid\SweetAlert\SweetAlertServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -229,6 +230,7 @@ return [
         'Form'      => Collective\Html\FormFacade::class,
 'Html'      => Collective\Html\HtmlFacade::class,
 'Flash'     => Laracasts\Flash\Flash::class,
+'Alert' => RealRashid\SweetAlert\Facades\Alert::class,
 
     ],
 
